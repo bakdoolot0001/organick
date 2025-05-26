@@ -1,0 +1,90 @@
+$primary-color: #274c5b;
+#header {
+  padding: 30px 0;
+  width: 100%;
+  opacity: 0.8;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      a {
+        font-weight: 700;
+        font-size: 18px;
+        color: $primary-color;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: #274c5b9e;
+      }
+    }
+    &--right {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      &__search {
+        display: flex;
+        align-items: center;
+        &--input {
+          position: relative;
+          input {
+            width: 250px;
+            height: 45px;
+            border-radius: 30px;
+            padding-left: 10px;
+            font-size: 18px;
+            background: #e3dfdf49;
+          }
+          a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45px;
+            height: 45px;
+            font-size: 22px;
+            background: #7eb693;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        }
+      }
+      &__cart {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &--cartIcon {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 100px;
+          height: 30px;
+          padding: 7px 0 7px 5px;
+          border: 1px solid gray;
+          border-radius: 30px;
+          h3 {
+            background: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            padding: 3px;
+          }
+          h4 {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#mainSubWelcome {
+  margin: 30px 0;
+  .mainSubWelcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    color: white;
+    &--image {
+      img {
+        width: 500px;
+      }
+      position: relative;
+      &__textFirst {
+        position: absolute;
+        top: 35%;
+        left: 50px;
+        h3 {
+          font-weight: 400;
+          font-size: 23px;
+        }
+        h1 {
+          font-weight: 800;
+          font-size: 30px;
+        }
+      }
+      &__textSecond {
+        position: absolute;
+        top: 35%;
+        left: 50px;
+        h3 {
+          font-weight: 400;
+          font-size: 23px;
+          color: #7EB693;
+        }
+        h1 {
+          font-weight: 800;
+          font-size: 30px;
+          color: #274C5B;
+        }
+      }
+    }
+  }
+}

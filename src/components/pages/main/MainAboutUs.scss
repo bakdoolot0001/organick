@@ -1,0 +1,81 @@
+$primary-color: #274c5b;
+#mainAboutUs {
+  margin: 30px 0;
+  padding: 100px 0;
+  background: #00000015;
+  .mainAboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 50%;
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 40%;
+      h3 {
+        font-family: Yellowtail;
+        font-weight: 400;
+        font-size: 36px;
+        color: #7eb693;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 35px;
+        color: $primary-color;
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 165%;
+        color: #525c60;
+      }
+      &__card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 80px;
+        }
+        h1 {
+          font-weight: 800;
+          font-size: 20px;
+          color: $primary-color;
+        }
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          color: #525c60;
+          margin-top: 5px;
+        }
+      }
+      button {
+        width: 150px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 600;
+        background: $primary-color;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        span {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #ffffff2b;
+          font-size: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

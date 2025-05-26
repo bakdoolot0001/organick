@@ -1,0 +1,54 @@
+$primary-color: #274c5b;
+#mainWelcome {
+  background: url(../../../assets/images/mainWelcomeImg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .container {
+    width: 70%;
+  }
+  .mainWelcome {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h3 {
+      font-family: Yellowtail;
+      font-weight: 400;
+      font-size: 36px;
+      color: #68a47f;
+    }
+    h1 {
+      font-family: Roboto;
+      font-weight: 800;
+      font-size: 70px;
+      color: $primary-color;
+    }
+    button {
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 18px;
+      color: #274c5b;
+      width: 170px;
+      height: 60px;
+      background: #EFD372;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      span {
+        background: $primary-color;
+        color: white;
+        border-radius: 50%;
+        font-size: 13px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

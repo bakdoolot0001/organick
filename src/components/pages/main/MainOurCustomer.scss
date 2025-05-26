@@ -1,0 +1,111 @@
+$primary-color: #274c5b;
+#mainOurCustomer {
+  background: url(../../../assets/images/ourCustomer.png);
+  background-size: cover;
+  height: 100vh;
+  padding: 50px 0;
+  .mainOurCustomer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &--content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      h3 {
+        font-family: Yellowtail;
+        font-weight: 400;
+        font-size: 36px;
+        color: #7eb693;
+      }
+      h1 {
+        font-family: Roboto;
+        font-weight: 800;
+        font-size: 50px;
+        color: $primary-color;
+      }
+      img {
+        width: 100px;
+        object-fit: contain;
+      }
+      &__rate {
+        display: flex;
+        align-items: center;
+        a {
+          color: rgb(215, 215, 11);
+          font-size: 23px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165%;
+        text-align: center;
+        color: #525c60;
+      }
+      h2 {
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 25px;
+        color: $primary-color;
+      }
+      h4 {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 15px;
+        color: #525c60;
+      }
+      &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &--dot {
+          width: 8px;
+          height: 8px;
+          background: #909496;
+          border-radius: 50%;
+          cursor: pointer;
+          &:nth-child(2) {
+            background: #7eb693;
+          }
+        }
+      }
+      &__counters {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        &--lineItem {
+          width: 170px;
+          height: 170px;
+          padding: 5px;
+          border: 4px solid #7eb693;
+          border-radius: 50%;
+          &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f1f1f1;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding: 10px;
+            h1 {
+              font-weight: 800;
+              font-size: 50px;
+            }
+            p {
+              font-weight: 600;
+              font-size: 16px;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

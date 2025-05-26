@@ -1,0 +1,71 @@
+$primary-color: #274c5b;
+#contact {
+  margin: 150px 0;
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    &__formBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 500px;
+    }
+    label {
+      font-family: Roboto;
+      font-weight: 600;
+      font-size: 18px;
+      color: $primary-color;
+    }
+    &--form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 125px;
+      input {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        color: #1c1919;
+        border: 1px solid #7eb693;
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        margin: 20px 0 40px 0;
+      }
+    }
+    &--messageText {
+      width: 100%;
+      textarea {
+        width: 98%;
+        height: 250px;
+        padding: 20px 0 0 20px;
+        border-radius: 10px;
+        color: #1c1919;
+        border: 1px solid #7eb693;
+        font-family: Roboto;
+        outline: none;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+    button {
+      width: 13%;
+      height: 50px;
+      background: #4d9165;
+      border-radius: 10px;
+      color: #fff;
+      font-family: Roboto;
+      font-weight: 600;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+}
