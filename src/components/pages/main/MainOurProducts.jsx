@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./MainOurProducts.scss";
-import { ProductContext } from "../../../context/context";
 import ProductCard from "../../ui/productCard/ProductCard";
 import { FaArrowRight } from "react-icons/fa";
+import { productContext } from "../../../context";
 
 const MainOurProducts = () => {
-  const { product } = useContext(ProductContext);
+  const { product } = useContext(productContext);
   return (
     <div id="mainOurProducts">
       <div className="container">

@@ -10,6 +10,8 @@ import Contact from "./components/pages/contactUs/Contact";
 import MainAboutUs from "./components/pages/main/MainAboutUs";
 import MainOurProducts from "./components/pages/main/MainOurProducts";
 import MainOurCustomer from "./components/pages/main/MainOurCustomer";
+import Shop from "./components/pages/shop/Shop";
+import Subscribe from "./components/ui/subscribe/Subscribe";
 
 function App() {
   const routes = [
@@ -53,6 +55,11 @@ function App() {
       link: "/contact",
       element: <Contact />,
     },
+    {
+      id: 10,
+      link: "/shop",
+      element: <Shop />,
+    },
   ];
   return (
     <div className="app">
@@ -62,6 +69,7 @@ function App() {
           <Route path={el.link} element={el.element} />
         ))}
       </Routes>
+      <Subscribe/>
       <Footer />
     </div>
   );

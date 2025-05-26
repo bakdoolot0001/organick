@@ -1,10 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { productContext } from "../../../context/RootContext";
-import ShopSingl from "../../../assets/Images/";
+import ShopSingl from "../../../assets/images/ShopSingle.svg";
+import { productContext } from "../../../context";
 
 const Details = () => {
   const { product, basket, setBasket } = useContext(productContext);
+  console.log("Product:", product);
+  console.log("Basket:", basket);
+  
   const { productId } = useParams();
   const selected = product.find((el) => el.id === productId);
   const [quantity, setQuantity] = useState(1);
@@ -37,6 +40,10 @@ const Details = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <section id="details">
       <div
@@ -45,6 +52,15 @@ const Details = () => {
           backgroundImage: `url(${ShopSingl})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
+          width: "100%",
+          height: "400px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#2c3e50",
+          textAlign: "center",
+          fontSize: "2rem",
+          fontWeight: "bold",
         }}
       >
         <h1>Shop Single</h1>

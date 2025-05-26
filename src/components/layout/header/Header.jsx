@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.scss";
 import logo from "../../../assets/images/Logo.svg";
 import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
+import { productContext } from "../../../context";
 
 const Header = () => {
+  const { basket } = useContext(productContext);
   return (
     <header id="header">
       <div className="container">
@@ -36,7 +38,7 @@ const Header = () => {
                   <h3>
                     <IoCartOutline />
                   </h3>
-                  <h4>Cart(0)</h4>
+                  <h4>Cart({basket.length})</h4>
                 </div>
               </div>
             </Link>
