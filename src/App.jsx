@@ -12,6 +12,7 @@ import MainOurProducts from "./components/pages/main/MainOurProducts";
 import MainOurCustomer from "./components/pages/main/MainOurCustomer";
 import Shop from "./components/pages/shop/Shop";
 import Subscribe from "./components/ui/subscribe/Subscribe";
+import MainCategories from "./components/pages/main/MainCategories";
 
 function App() {
   const routes = [
@@ -59,6 +60,11 @@ function App() {
       id: 10,
       link: "/shop",
       element: <Shop />,
+    },
+    {
+      id: 11,
+      link: "/category/:categoryPro",
+      element: <MainCategories />,
     },
   ];
   return (

@@ -4,6 +4,7 @@ import MainWelcome from "./MainWelcome";
 import MainSubWelcome from "./MainSubWelcome";
 import MainOurProducts from "./MainOurProducts";
 import MainOurCustomer from "./MainOurCustomer";
+import MainCategories from "./MainCategories";
 
 const MainPage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const MainPage = () => {
     <div>
       <div className="main">
         <MainWelcome />
+        <MainCategories/>
         <MainSubWelcome />
         <MainAboutUs />
         <MainOurProducts />

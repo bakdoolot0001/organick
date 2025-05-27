@@ -1,0 +1,43 @@
+#categories {
+  margin: 20px 0;
+  .categories-title {
+    font-size: 3rem;
+    color: #7EB693;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Yellowtail;
+    font-weight: normal;
+  }
+  .categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      text-align: center;
+      background: #00000018;
+      color: #7EB693;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 1.2rem;
+        color: #333;
+      }
+    }
+  }
+}

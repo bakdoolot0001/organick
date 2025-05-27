@@ -106,8 +106,7 @@ const Admin = () => {
                     Select Category
                   </option>
                   <option value="vegetables">Vegetables</option>
-                  <option value="fresh">Fresh</option>
-                  <option value="millets">Millets</option>
+                  <option value="fresh">Fruits</option>
                   <option value="health">Health</option>
                   <option value="nuts">Nuts</option>
                 </select>
